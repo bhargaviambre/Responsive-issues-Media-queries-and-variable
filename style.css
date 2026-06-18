@@ -57,7 +57,7 @@ img{
     width: 35vw; 
     vertical-align: middle; 
 } 
-@media(width<=768px){ 
+@media(max-width:768px){ 
     #logo{ 
         font-size: smaller; 
     } 
@@ -71,18 +71,15 @@ img{
         margin: 1vh; 
     } 
 } 
-@media(width<=320px){
+@media(max-width:425px){
     nav{
         display:none;
     }
 
-    .hero{
-        flex-direction:column;
-        text-align:left;
-    }
-
     .content{
         width:90%;
+        flex-direction:column;
+        text-align:left;
     }
 
     img{
@@ -92,7 +89,7 @@ img{
 
     p{
         width:100%;
-        
+
     }
 
     #para{
@@ -102,5 +99,7 @@ img{
     button{
         width:60vw;
     }
+}
+ 
 }
  
