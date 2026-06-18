@@ -8,6 +8,17 @@
     display:inline-block; 
     width:15vw; 
 } 
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:2vh 2vw;
+}
+
+nav{
+    display:flex;
+    gap:2vw;
+}
 nav{ 
     display:inline-block; 
     width:60vw; 
