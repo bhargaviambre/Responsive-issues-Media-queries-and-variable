@@ -1,58 +1,106 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-}
+*{ 
+    margin: 1vw; 
+    box-sizing: border-box; 
+} 
+#logo{ 
+    color: rgb(54,54,54); 
+    font-family: Arial, Helvetica, sans-serif; 
+    display:inline-block; 
+    width:15vw; 
+} 
+nav{ 
+    display:inline-block; 
+    width:60vw; 
+    text-align:center; 
+    padding-top:2vh; 
+} 
+a{ 
+    display:inline-block; 
+    text-decoration:none; 
+    letter-spacing:0.2vw; 
+    margin:0 1vw; 
+} 
+strong{ 
+    display:inline-block; 
+    width:12vw; 
+    background-color:rgb(175,208,222); 
+    color:darkblue; 
+    padding:1vh 1vw; 
+    border-radius:0.5vw; 
+    text-align:center; 
+    float: right; 
+} 
+p{ 
+    font-weight:500; 
+    font-size:3vw; 
+    width:25vw; 
+} 
+#para{ 
+    font-size:1vw; 
+} 
+button{ 
+    background-color:rgb(152,201,220); 
+    color:blue; 
+    font-weight:bold; 
+    width:20vw; 
+    height:6vh; 
+    border-radius:2vw; 
+    border:none; 
+} 
+.content{ 
+    display: inline-block; 
+    width: 35vw; 
+    vertical-align: middle; 
+} 
+img{ 
+    display: inline-block; 
+    width: 35vw; 
+    vertical-align: middle; 
+} 
+@media(width<=768px){ 
+    #logo{ 
+        font-size: smaller; 
+    } 
+    strong{ 
+        font-size: smaller; 
+    } 
+    a{ 
+        font-size: smaller 
+    } 
+    div{ 
+        margin: 1vh; 
+    } 
+} 
+@media(width<=320px){
+    nav{
+        display:none;
+    }
 
-.container{
-    display: flex;
-    height: 100vh;
-}
-.left-section{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.left-section img{
-    width: 70%;
-    height: 70%;
-}
+    .hero{
+        flex-direction:column;
+        text-align:left;
+    }
 
-.right-section{
-    flex: 1;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    .content{
+        width:90%;
+    }
+
+    img{
+        width:70%;
+        margin-top:3vh;
+    }
+
+    p{
+        width:100%;
+        
+    }
+
+    #para{
+        font-size:3.5vw;
+    }
+
+    button{
+        width:60vw;
+    }
 }
-
-.Login{
-    width: 350px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-}
-
-.Login h2{
-    text-align: center;
-    margin-bottom: 15px;
-}
-
-.Login input{
-    padding: 12px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-}
-
-
-
-button{
-    padding: 12px;
-    border: none;
-    border-radius: 5px;
-    background-color: skyblue;
-    color: white;
-    font-size: 16px;
-}
+ 
