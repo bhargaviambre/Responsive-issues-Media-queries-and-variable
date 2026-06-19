@@ -1,12 +1,15 @@
-*{
+ *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 :root{
-    --tablet: 768px;
-    --mobile: 375px;
+    --primary-color: #19a6ff;
+    --text-color: #4d5966;
+    --light-text: #9aa0a6;
+    --button-text: white;
+    --username-bg: #d9efff;
 }
 
 body{
@@ -22,7 +25,7 @@ body{
 }
 
 #logo{
-    color: #4d5966;
+    color: var(--text-color);
     font-size: 2rem;
 }
 
@@ -33,13 +36,13 @@ nav{
 
 a{
     text-decoration: none;
-    color: #7f8c8d;
+    color:var(--light-text);
     font-size: 14px;
 }
 
 strong{
-    background-color: #d9efff;
-    color: #19a6ff;
+    background-color:var(--username-bg);
+    color: var(--primary-color);
     padding: 12px 18px;
     border-radius: 12px;
     font-size: 14px;
@@ -60,13 +63,13 @@ strong{
 .content h1{
     font-size: 4rem;
     line-height: 1.2;
-    color: #4d5966;
+    color: var(--text-color)
 }
 
 .content p{
     margin-top: 20px;
     width: 80%;
-    color: #9aa0a6;
+    color: var(--light-text);
     font-size: 1.15rem;
     line-height: 1.8;
 }
@@ -77,8 +80,8 @@ button{
     height: 60px;
     border: none;
     border-radius: 15px;
-    background-color: #19a6ff;
-    color: white;
+    background-color: var(--primary-color);
+    color: var(--button-text);
     font-weight: bold;
     cursor: pointer;
 }
@@ -95,7 +98,7 @@ button{
 }
 
 
-@media (max-width: var(--tablet)){
+@media (max-width: 768px){
 
     #logo{
         font-size: 1.5rem;
@@ -123,7 +126,9 @@ button{
     }
 }
 
-@media (max-width: var(--mobile)){
+
+
+@media (max-width: 375px){
 
     .navbar{
         flex-wrap: wrap;
