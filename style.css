@@ -1,9 +1,9 @@
- *{
+  *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-
+/*These variables are created for colors of elements*/
 :root{
     --primary-color: #19a6ff;
     --text-color: #4d5966;
@@ -74,6 +74,10 @@ strong{
     line-height: 1.8;
 }
 
+.highlight{
+color: var(--primary-color);
+}
+
 button{
     margin-top: 30px;
     width: 220px;
@@ -96,7 +100,7 @@ button{
     width: 100%;
     max-width: 550px;
 }
-
+/* Below code is for tablet view for which width is set to */
 
 @media (max-width: 768px){
 
@@ -107,9 +111,23 @@ button{
     a{
         font-size: 12px;
     }
+    .navbar{
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+        padding: 20px;
+    }
+    nav{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        width: 100%;
+    }
 
     strong{
         font-size: 12px;
+        padding: 10px 15px;
     }
 
     .content h1{
@@ -124,9 +142,12 @@ button{
         width: 180px;
         height: 50px;
     }
+    .image img{
+        max-width: 400px;
+    }
 }
 
-
+/* The below code is for mobile view for which width is set to 375px. Only logo and username is shown*/
 
 @media (max-width: 375px){
 
